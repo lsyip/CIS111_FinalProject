@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class UserAccount{
 
     //Scanner object to collect user input
-    //
     Scanner keyboard = new Scanner(System.in);
 
     //ArrayList containing: this will store all usernames and passwords in separate lists
