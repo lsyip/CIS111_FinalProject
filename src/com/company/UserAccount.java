@@ -42,7 +42,7 @@ public class UserAccount{
     //   .get allows you to retrieve the value in the arrayList -> same as doing array[2] = "hello"
     //First time it goes through username.size == 1 meaning it doesn't go through the loop since 1-1 == 0 and 0 isn't less than 0 but equals to
     //Second time username.size == 2, it will then check against the first index of username and password, to the second index of username and password
-    //For example if the size was five, then it would check username.get(i = 0) against username.get{j = 1,2,3,4), next iteration username.get(i = 1) against username.get(j = 2, 3, 4), and so on
+    //For example if the size was 5, then it would check username.get(i = 0) against username.get{j = 1,2,3,4), next iteration username.get(i = 1) against username.get(j = 2, 3, 4), and so on
     //Returns true if either username or password ("||") is the same, false if different
     public boolean checkDuplicateUserAccount(){
         for(int i = 0; i < (username.size() - 1); i++){
@@ -70,7 +70,6 @@ public class UserAccount{
                 return true;
             }
         }
-
         return false;
     }
 
@@ -82,7 +81,7 @@ public class UserAccount{
     //deposit method here
     public void depositMethod(){
         for (int i = 0; i < totalBalance.size(); i++) {
-            if (user.equals(username.get(i)) && pass.equals(password.get(i))) {
+            if (user.equalsIgnoreCase(username.get(i)) && pass.equals(password.get(i))) {
                 userBalance = (totalBalance.get(i));
                 System.out.printf(user.substring(0,1).toUpperCase() + user.substring(1) + " your current balance is: $%.2f \n", userBalance);
                 System.out.println("Enter deposit amount: ");
@@ -106,7 +105,7 @@ public class UserAccount{
     public void withdrawMethod(){
             //Find the user account
             for (int i = 0; i < totalBalance.size(); i++) {
-                if (user.equals(username.get(i)) && pass.equals(password.get(i))) {
+                if (user.equalsIgnoreCase(username.get(i)) && pass.equals(password.get(i))) {
                     userBalance = totalBalance.get(i);
                     System.out.printf(user.substring(0,1).toUpperCase() + user.substring(1) + " your current balance is: $%.2f \n", userBalance);
                     System.out.println("Enter withdraw amount: ");
@@ -129,7 +128,7 @@ public class UserAccount{
     //totalBalance.get(0) == username.get(0) and so on
     public void checkBalance(){
         for(int i = 0; i < totalBalance.size(); i++){
-            if(user.equals(username.get(i)) && pass.equals(password.get(i))){
+            if(user.equalsIgnoreCase(username.get(i)) && pass.equals(password.get(i))){
                 userBalance = totalBalance.get(i);
                 System.out.printf(user.substring(0,1).toUpperCase() + user.substring(1) + " your current balance is: $%.2f \n", userBalance);
                 break;
