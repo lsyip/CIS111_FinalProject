@@ -18,7 +18,6 @@ public class UserAccount{
     //Variables
     String user;
     String pass;
-    double initialBalance;
     double depositAmount;
     double withdrawAmount;
     double userBalance;
@@ -31,7 +30,6 @@ public class UserAccount{
     public void getUsers(String un, String p){
         user = un;
         pass = p;
-        initialBalance = 0;
     }
 
     public void setUserAccount(){
