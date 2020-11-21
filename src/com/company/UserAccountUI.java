@@ -20,15 +20,17 @@ public class UserAccountUI {
             System.out.println("Select 1 to create a new account, 2 for returning users, 3 to exit");
             userInput = kbInput.nextInt();
             if(userInput == 1){
-                System.out.println("Please create a new account below." + "\n");
-                System.out.println("Please enter an username that is not taken");
-                username = kbInput.next();
-                System.out.println("\n" + "Please enter a password that is not taken");
-                password = kbInput.next();
-                useraccount.getUsers(username, password);
-                if(useraccount.checkNewUserAccount()){
-                    System.out.println("Sorry that username or password was taken. Try again.");
-                }else{
+                do{
+                    System.out.println("Please create a new account below." + "\n");
+                    System.out.println("Please enter an username that is not taken");
+                    username = kbInput.next();
+                    System.out.println("\n" + "Please enter a password that is not taken");
+                    password = kbInput.next();
+                    useraccount.getUsers(username, password);
+                    if(useraccount.checkNewUserAccount()){
+                        System.out.println("Sorry that username or password was taken. Try again.");
+                    }
+                }while(useraccount.checkNewUserAccount());
                     useraccount.setUserAccount();
                     while(!isDone){
                         System.out.println("Thank you for choosing us today, " + username.substring(0,1).toUpperCase() + username.substring(1));
@@ -54,7 +56,7 @@ public class UserAccountUI {
                         }
                     }
                     isDone = false; //let's the program continue
-                }
+
             }else if(userInput == 2){
                 System.out.println("Please enter your username");
                 username = kbInput.next(); //nextLine() was causing it to skip over, I don't exactly know why but I think it has something to do with nextInt();
