@@ -31,6 +31,7 @@ public class UserAccountUI {
                         System.out.println("Sorry that username or password was taken. Try again.");
                     }
                 }while(useraccount.checkNewUserAccount());
+
                     useraccount.setUserAccount();
                     while(!isDone){
                         System.out.println("Thank you for choosing us today, " + username.substring(0,1).toUpperCase() + username.substring(1));
