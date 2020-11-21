@@ -32,36 +32,21 @@ public class UserAccount{
         pass = p;
     }
 
-    public void setUserAccount(){
-        //adding to an arrayList is simply .add()
-        username.add(user);
-        password.add(pass);
-        totalBalance.add(0.0); // initialize user account with balance of 0
-    }
-
-    //   .get allows you to retrieve the value in the arrayList -> same as doing array[2] = "hello"
-    //First time it goes through username.size == 1 meaning it doesn't go through the loop since 1-1 == 0 and 0 isn't less than 0 but equals to
-    //Second time username.size == 2, it will then check against the first index of username and password, to the second index of username and password
-    //For example if the size was 5, then it would check username.get(i = 0) against username.get{j = 1,2,3,4), next iteration username.get(i = 1) against username.get(j = 2, 3, 4), and so on
-    //Returns true if either username or password ("||") is the same, false if different
-    public boolean checkDuplicateUserAccount(){
-        for(int i = 0; i < (username.size() - 1); i++){
-            for(int j = i + 1; j < username.size(); j++){
-                if(username.get(i).equalsIgnoreCase(username.get(j)) || password.get(i).equals(password.get(j))){
-                    return true;
-                }
+    // This checks if an user already exists
+    public boolean checkNewUserAccount(){
+        for(int i = 0; i < username.size(); i++){
+            if(user.equalsIgnoreCase(username.get(i)) || pass.equalsIgnoreCase(password.get(i))){
+                return true;
             }
         }
         return false;
     }
 
-    //If checkUserAccount == true, then it removes the last username and password entered since that one would be the duplicate.
-    public void deleteDuplicates(){
-        if(checkDuplicateUserAccount()){
-            username.remove(username.size() - 1);
-            password.remove(password.size() - 1);
-            totalBalance.remove(totalBalance.size() - 1); //removes the one created with the duplicate account
-        }
+    public void setUserAccount(){
+        //adding to an arrayList is simply .add()
+        username.add(user);
+        password.add(pass);
+        totalBalance.add(0.0); // initialize user account with balance of 0
     }
 
     public boolean checkUserAccount(){

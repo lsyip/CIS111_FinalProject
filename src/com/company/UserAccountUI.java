@@ -26,11 +26,10 @@ public class UserAccountUI {
                 System.out.println("\n" + "Please enter a password that is not taken");
                 password = kbInput.next();
                 useraccount.getUsers(username, password);
-                useraccount.setUserAccount();
-                if(useraccount.checkDuplicateUserAccount()){
-                    useraccount.deleteDuplicates();
+                if(useraccount.checkNewUserAccount()){
                     System.out.println("Sorry that username or password was taken. Try again.");
                 }else{
+                    useraccount.setUserAccount();
                     while(!isDone){
                         System.out.println("Thank you for choosing us today, " + username.substring(0,1).toUpperCase() + username.substring(1));
                         System.out.println("\n" + "Select 1 to deposit, 2 to withdraw, 3 to check balance, 4 to quit");
@@ -39,6 +38,7 @@ public class UserAccountUI {
                             case 1:
                                 useraccount.depositMethod();
                                 break;
+
                             case 2:
                                 useraccount.withdrawMethod();
                                 break;
@@ -70,6 +70,7 @@ public class UserAccountUI {
                             case 1:
                                 useraccount.depositMethod();
                                 break;
+
                             case 2:
                                 useraccount.withdrawMethod();
                                 break;
