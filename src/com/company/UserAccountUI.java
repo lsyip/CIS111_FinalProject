@@ -35,7 +35,7 @@ public class UserAccountUI {
                     useraccount.setUserAccount();
                     while(!isDone){
                         System.out.println("Thank you for choosing us today, " + username.substring(0,1).toUpperCase() + username.substring(1));
-                        System.out.println("\n" + "Select 1 to deposit, 2 to withdraw, 3 to check balance, 4 to quit");
+                        System.out.println("Select 1 to deposit, 2 to withdraw, 3 to check balance, 4 to quit");
                         userInput = kbInput.nextInt();
                         switch (userInput){
                             case 1:
@@ -56,7 +56,7 @@ public class UserAccountUI {
                                 break;
                         }
                     }
-                    isDone = false; //let's the program continue
+                    isDone = false; //lets the program continue
 
             }else if(userInput == 2){
                 System.out.println("Please enter your username");

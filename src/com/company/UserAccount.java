@@ -97,15 +97,14 @@ public class UserAccount{
                     withdrawAmount = keyboard.nextDouble();
 
                     //Checks for negative number
-                    if (withdrawAmount < 0) {
+                    while (withdrawAmount < 0 || withdrawAmount > userBalance) {
                         System.out.println("Invalid withdrawal amount." + "\n" + "Enter withdraw amount: ");
                         withdrawAmount = keyboard.nextDouble();
-                    }
-
-                    //Checks for sufficient funds.
-                    while (withdrawAmount > userBalance) {
-                        System.out.println("Insufficient funds available." + "\n" + "Enter withdraw amount: ");
-                        withdrawAmount = keyboard.nextDouble();
+                        //Checks for sufficient funds.
+                        while (withdrawAmount > userBalance) {
+                            System.out.println("Insufficient funds available." + "\n" + "Enter withdraw amount: ");
+                            withdrawAmount = keyboard.nextDouble();
+                        }
                     }
 
                     double newBalance = userBalance - withdrawAmount;
