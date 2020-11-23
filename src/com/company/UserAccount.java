@@ -88,7 +88,7 @@ public class UserAccount{
 
     //withdraw method here
     public void withdrawMethod(){
-            //Find the user account
+            //Find the user account and access totalBalance
             for (int i = 0; i < totalBalance.size(); i++) {
                 if (user.equalsIgnoreCase(username.get(i)) && pass.equals(password.get(i))) {
                     userBalance = totalBalance.get(i);
@@ -96,7 +96,7 @@ public class UserAccount{
                     System.out.println("Enter withdraw amount: ");
                     withdrawAmount = keyboard.nextDouble();
 
-                    //Checks for negative number
+                    //Checks for negative number and insufficient funds
                     while (withdrawAmount < 0 || withdrawAmount > userBalance) {
                         System.out.println("Invalid withdrawal amount." + "\n" + "Enter withdraw amount: ");
                         withdrawAmount = keyboard.nextDouble();
@@ -107,6 +107,7 @@ public class UserAccount{
                         }
                     }
 
+                    //Update user's totalBalance and print information
                     double newBalance = userBalance - withdrawAmount;
                     totalBalance.set(i, newBalance);
                     System.out.printf(user.substring(0,1).toUpperCase() + user.substring(1) + " your new balance is: $%.2f \n", newBalance);
