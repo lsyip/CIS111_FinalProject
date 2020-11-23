@@ -100,11 +100,6 @@ public class UserAccount{
                     while (withdrawAmount < 0 || withdrawAmount > userBalance) {
                         System.out.println("Invalid withdrawal amount." + "\n" + "Enter withdraw amount: ");
                         withdrawAmount = keyboard.nextDouble();
-                        //Checks for sufficient funds.
-                        while (withdrawAmount > userBalance) {
-                            System.out.println("Insufficient funds available." + "\n" + "Enter withdraw amount: ");
-                            withdrawAmount = keyboard.nextDouble();
-                        }
                     }
 
                     //Update user's totalBalance and print information
