@@ -54,7 +54,7 @@ public class UserAccount{
         totalBalance.add(0.0); // initialize user account with balance of 0
 
         //Initialize each element of transactionHistory ArrayList with another ArrayList
-        for (int i = 0; i < username.size(); i++){
+        for (int i = historyIndex; i < historyIndex + 1; i++){
             transactionHistory.add(new ArrayList());
         }
         transactionHistory.get(historyIndex).add("You created a new account.");

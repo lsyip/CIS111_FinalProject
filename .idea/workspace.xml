@@ -85,33 +85,93 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="225" key="GridCell.Tab.0.bottom" timestamp="1606282081105">
+    <state width="1398" height="286" key="GridCell.Tab.0.bottom" timestamp="1606331834448">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606169994646" />
     <state width="1398" height="113" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1606179211053" />
-    <state width="1398" height="225" key="GridCell.Tab.0.bottom/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606282081105" />
+    <state width="1398" height="286" key="GridCell.Tab.0.bottom/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606331834448" />
     <state width="1398" height="533" key="GridCell.Tab.0.bottom/1440.-50.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1606279190145" />
-    <state width="1398" height="225" key="GridCell.Tab.0.center" timestamp="1606282081104">
+    <state width="1398" height="286" key="GridCell.Tab.0.center" timestamp="1606331834446">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="198" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606169994643" />
     <state width="1398" height="113" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1606179211052" />
-    <state width="1398" height="225" key="GridCell.Tab.0.center/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606282081104" />
+    <state width="1398" height="286" key="GridCell.Tab.0.center/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606331834446" />
     <state width="1398" height="533" key="GridCell.Tab.0.center/1440.-50.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1606279190142" />
-    <state width="1398" height="225" key="GridCell.Tab.0.left" timestamp="1606282081103">
+    <state width="1398" height="286" key="GridCell.Tab.0.left" timestamp="1606331834444">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="198" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606169994642" />
     <state width="1398" height="113" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1606179211051" />
-    <state width="1398" height="225" key="GridCell.Tab.0.left/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606282081103" />
+    <state width="1398" height="286" key="GridCell.Tab.0.left/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606331834444" />
     <state width="1398" height="533" key="GridCell.Tab.0.left/1440.-50.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1606279190140" />
-    <state width="1398" height="225" key="GridCell.Tab.0.right" timestamp="1606282081105">
+    <state width="1398" height="286" key="GridCell.Tab.0.right" timestamp="1606331834447">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1398" height="198" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606169994644" />
     <state width="1398" height="113" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1606179211053" />
-    <state width="1398" height="225" key="GridCell.Tab.0.right/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606282081105" />
+    <state width="1398" height="286" key="GridCell.Tab.0.right/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606331834447" />
     <state width="1398" height="533" key="GridCell.Tab.0.right/1440.-50.1600.900/0.0.1440.900@0.0.1440.900" timestamp="1606279190143" />
+    <state width="1398" height="286" key="GridCell.Tab.1.bottom" timestamp="1606331834453">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="286" key="GridCell.Tab.1.bottom/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606331834453" />
+    <state width="1398" height="286" key="GridCell.Tab.1.center" timestamp="1606331834451">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="286" key="GridCell.Tab.1.center/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606331834451" />
+    <state width="1398" height="286" key="GridCell.Tab.1.left" timestamp="1606331834450">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="286" key="GridCell.Tab.1.left/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606331834450" />
+    <state width="1398" height="286" key="GridCell.Tab.1.right" timestamp="1606331834452">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="286" key="GridCell.Tab.1.right/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606331834452" />
+    <state x="221" y="197" width="999" height="580" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606330662884">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="197" width="999" height="580" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1440.-27.1600.877/0.23.1440.877@0.23.1440.877" timestamp="1606330662884" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/UserAccount.java</url>
+          <line>49</line>
+          <properties class="com.company.UserAccount" method="setUserAccount">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/UserAccount.java</url>
+          <line>78</line>
+          <properties class="com.company.UserAccount" method="depositMethod">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/UserAccount.java</url>
+          <line>102</line>
+          <properties class="com.company.UserAccount" method="withdrawMethod">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/UserAccountUI.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/UserAccountUI.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
