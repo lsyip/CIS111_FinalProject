@@ -135,7 +135,7 @@ public class UserAccount{
             }
 
     }
-    
+
     //This method allows for the correct balance to be shown for the corresponding account
     //totalBalance.get(0) == username.get(0) and so on
     public void checkBalance(){

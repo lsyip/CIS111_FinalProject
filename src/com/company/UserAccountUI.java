@@ -53,6 +53,7 @@ public class UserAccountUI {
 
                             case 4:
                                 useraccount.transactionHistory();
+                                break;
 
                             default:
                                 System.out.println("Thank you for banking with us today" + "\n" + "\n");
