@@ -72,12 +72,8 @@ public class UserAccount{
         //adding to an arrayList is simply .add()
         username.add(user);
         password.add(pass);
-        totalBalance.add(0.0); // initialize user account with balance of 0
-
-        //Initialize each element of transactionHistory ArrayList with another ArrayList
-        for (int i = historyIndex; i < historyIndex + 1; i++){
-            transactionHistory.add(new ArrayList());
-        }
+        totalBalance.add(0.0); // Initialize user account with balance of 0
+        transactionHistory.add(new ArrayList());
         transactionHistory.get(historyIndex).add("You created a new account.");
         historyIndex++;
     }
